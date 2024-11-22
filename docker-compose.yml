@@ -202,7 +202,7 @@ services:
     environment:
       HEARTBEAT_INTERNAL_PASSWORD: ${HEARTBEAT_INTERNAL_PASSWORD:-}
       BEATS_SYSTEM_PASSWORD: ${BEATS_SYSTEM_PASSWORD:-}
-      API_HOST: ${ML_API_HOST}
+      ML_API_HOST: ${ML_API_HOST}
     networks:
       - elk
     depends_on:

@@ -19,7 +19,7 @@ heartbeat.monitors:
 
 - type: http
   name: "API Machine Learning Health Check"
-  hosts: [${ML_API_HOST}]  
+  hosts: ${ML_API_HOST}  
   schedule: '@every 30s'                  
   timeout: 15s                            
   check.response:
